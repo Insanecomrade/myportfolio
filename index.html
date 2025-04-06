@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Void Artist | 3D Game Artist Portfolio</title>
+  <meta name="description" content="Portfolio of a professional 3D game artist showcasing character designs, environments, and concept art">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <div class="black-hole"></div>
+    <div class="stars"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="#home" class="logo">
+          <span class="logo-accent">VOID</span>ARTIST
+        </a>
+        
+        <button class="mobile-menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+      
+      <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#portfolio" class="mobile-link">Portfolio</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">CREATING WORLDS BEYOND IMAGINATION</h1>
+        <p class="hero-subtitle">
+          Pushing the boundaries of 3D game art with cutting-edge designs and 
+          immersive visual experiences that transcend reality.
+        </p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">VIEW MY WORK</a>
+          <a href="#contact" class="btn btn-outline">CONTACT ME</a>
+        </div>
+      </div>
+      <a href="#portfolio" class="scroll-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-down">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">PORTFOLIO</h2>
+        <p class="section-subtitle">
+          Explore my collection of 3D art and designs for AAA and indie game projects.
+          Each piece tells a story and creates an immersive experience.
+        </p>
+      </div>
+      
+      <div class="portfolio-categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="Character Design">Character Design</button>
+        <button class="category-btn" data-category="Environment">Environment</button>
+        <button class="category-btn" data-category="Concept Art">Concept Art</button>
+        <button class="category-btn" data-category="Props & Assets">Props & Assets</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Portfolio Items -->
+        <div class="portfolio-item" data-category="Character Design">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=2070&auto=format&fit=crop" alt="Neon Depths">
+            <div class="overlay">
+              <div>
+                <h3>Neon Depths</h3>
+                <p>Character Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Neon Depths</h3>
+            <p class="portfolio-category">Character Design</p>
+            <p class="portfolio-description">Cybernetic character design for an upcoming sci-fi RPG, featuring advanced armor systems with integrated AI.</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="Environment">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1493799799228-8a1870e661a9?q=80&w=1976&auto=format&fit=crop" alt="Ethereal Plains">
+            <div class="overlay">
+              <div>
+                <h3>Ethereal Plains</h3>
+                <p>Environment</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Ethereal Plains</h3>
+            <p class="portfolio-category">Environment</p>
+            <p class="portfolio-description">Vast alien landscape with bioluminescent flora and floating mountains, created for an open-world adventure game.</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="Concept Art">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?q=80&w=2070&auto=format&fit=crop" alt="Mech Guardian">
+            <div class="overlay">
+              <div>
+                <h3>Mech Guardian</h3>
+                <p>Concept Art</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Mech Guardian</h3>
+            <p class="portfolio-category">Concept Art</p>
+            <p class="portfolio-description">Heavy assault mech unit design with modular weapon systems and reactive armor plating.</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="Environment">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1518544866330-915f540bf261?q=80&w=1974&auto=format&fit=crop" alt="Ancient Ruins">
+            <div class="overlay">
+              <div>
+                <h3>Ancient Ruins</h3>
+                <p>Environment</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Ancient Ruins</h3>
+            <p class="portfolio-category">Environment</p>
+            <p class="portfolio-description">Detailed ancient temple environment with dynamic lighting and procedural degradation effects.</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="Character Design">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=1974&auto=format&fit=crop" alt="Void Walker">
+            <div class="overlay">
+              <div>
+                <h3>Void Walker</h3>
+                <p>Character Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Void Walker</h3>
+            <p class="portfolio-category">Character Design</p>
+            <p class="portfolio-description">Ethereal being composed of dark matter and celestial energy, designed for a cosmic horror game.</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="Props & Assets">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1964&auto=format&fit=crop" alt="Quantum Forge">
+            <div class="overlay">
+              <div>
+                <h3>Quantum Forge</h3>
+                <p>Props & Assets</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-details">
+            <h3>Quantum Forge</h3>
+            <p class="portfolio-category">Props & Assets</p>
+            <p class="portfolio-description">Futuristic crafting station with particle effects and interactive elements for a space simulation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="section-subtitle">
+          The mind behind the digital worlds and characters
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3><span class="accent">Game</span> Artist & Designer</h3>
+          <p>
+            With over 8 years of experience in 3D game art, I've collaborated with indie developers 
+            and AAA studios to create visually stunning and technically optimized assets for games 
+            across multiple platforms. My specialty lies in creating detailed characters, immersive
+            environments, and unique prop designs that enhance gameplay experiences.
+          </p>
+          <p>
+            My workflow combines technical precision with artistic vision, utilizing industry-standard
+            tools like Blender, Maya, ZBrush, and Substance Painter. I'm passionate about pushing the 
+            boundaries of what's possible in game art while maintaining performance standards for 
+            modern game engines.
+          </p>
+          
+          <div class="about-buttons">
+            <a href="#contact" class="btn btn-primary">GET IN TOUCH</a>
+            <a href="#portfolio" class="btn btn-outline">VIEW WORK</a>
+          </div>
+        </div>
+        <div class="skills-card">
+          <div class="card-corner top-left"></div>
+          <div class="card-corner bottom-right"></div>
+          
+          <h3 class="skills-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+              <circle cx="12" cy="12" r="8"></circle>
+              <path d="M12 2v7.5"></path>
+              <path d="m19 5-5.23 5.23"></path>
+              <path d="M22 12h-7.5"></path>
+              <path d="m19 19-5.23-5.23"></path>
+              <path d="M12 22v-7.5"></path>
+              <path d="m5 19 5.23-5.23"></path>
+              <path d="M2 12h7.5"></path>
+              <path d="m5 5 5.23 5.23"></path>
+            </svg>
+            Skills & Expertise
+          </h3>
+          
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  </svg>
+                  3D Modeling
+                </div>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"></path>
+                    <path d="m5 2 5 5"></path>
+                    <path d="M2 13h15"></path>
+                    <path d="M22 20a2 2 0 1 1-4 0c0-1.6 1.7-2.4 2-4 .3 1.6 2 2.4 2 4Z"></path>
+                  </svg>
+                  Texturing
+                </div>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                  Animation
+                </div>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                    <path d="M6 12h4"></path>
+                    <path d="M18 9h0"></path>
+                    <path d="M18 15h0"></path>
+                    <path d="M15 12h0"></path>
+                    <path d="M21 12h0"></path>
+                    <path d="M9 9h0"></path>
+                    <path d="M9 15h0"></path>
+                  </svg>
+                  Game Assets
+                </div>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <path d="M12.83 2.18A2 2 0 0 0 11 4v16a2 2 0 0 0 2.83 1.82l8-4a2 2 0 0 0 0-3.64l-8-4a2 2 0 0 0 0-3.64l8-4a2 2 0 0 0 0-3.64Z"></path>
+                    <path d="M2 12h10"></path>
+                    <path d="M2 7h7"></path>
+                    <path d="M2 17h5"></path>
+                  </svg>
+                  Environment Design
+                </div>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <div class="skill-name">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="M2 2l7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                  Concept Art
+                </div>
+                <span class="skill-level">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">CONTACT ME</h2>
+        <p class="section-subtitle">
+          Let's collaborate on your next gaming project
+        </p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+          </p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <h4>Email</h4>
+                <a href="mailto:contact@voidartist.com">contact@voidartist.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <h4>Phone</h4>
+                <a href="tel:+12345678901">+1 (234) 567-8901</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-detail">
+                <h4>Location</h4>
+                <p>Los Angeles, California</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="ArtStation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m2 19 10-15 10 15Z"></path>
+                <path d="m2 19 10-15 10 15"></path>
+                <path d="m19 5-7 10-7-10Z"></path>
+                <path d="M22 19H2"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project Discussion">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-accent">VOID</span>ARTIST
+          </a>
+          <p>Creating immersive 3D game worlds and characters</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <button class="scroll-top" aria-label="Scroll to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2025</span> Void Artist. All rights reserved.</p>
+        <p>Designed with <span class="heart">♥</span> for the digital universe</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Container -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal content will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
