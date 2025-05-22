@@ -10,9 +10,53 @@
 </head>
 <body>
   <div class="background">
+    <canvas id="caterpillar"></canvas>
     <div class="black-hole"></div>
     <div class="stars"></div>
   </div>
+  <script>
+    const canvas = document.getElementById('caterpillar');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    const caterpillarLength = 20;
+    const dots = Array.from({ length: caterpillarLength }, () => ({ x: width / 2, y: height / 2 }));
+    let target = { x: width / 2, y: height / 2 };
+
+    window.addEventListener('mousemove', e => {
+      target.x = e.clientX;
+      target.y = e.clientY;
+    });
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      dots[0].x += (target.x - dots[0].x) * 0.1;
+      dots[0].y += (target.y - dots[0].y) * 0.1;
+
+      for (let i = 1; i < dots.length; i++) {
+        dots[i].x += (dots[i - 1].x - dots[i].x) * 0.3;
+        dots[i].y += (dots[i - 1].y - dots[i].y) * 0.3;
+      }
+
+      for (let i = 0; i < dots.length; i++) {
+        ctx.beginPath();
+        ctx.arc(dots[i].x, dots[i].y, 5 - i * 0.2, 0, Math.PI * 2);
+        ctx.fillStyle = `hsl(${(i * 12) % 360}, 100%, 70%)`;
+        ctx.fill();
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+  </script>
+
 
   <!-- Navigation -->
   <nav class="navbar">
